@@ -1,0 +1,235 @@
+@import "variables";
+
+body {
+   @extend %start;
+}
+.container {
+   max-width: 1150px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+.container_big {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+@import "header";
+
+.promo {
+   margin-top: 129px;
+   margin-bottom: 130px;
+}
+.title {
+   @include text (500, 35px, 40px);
+   color: $title-color;
+   margin: 0;
+   margin-bottom: 20px;
+}
+.text {
+   @include text (400, 16px, 20px);
+   color: $text-color;
+   margin: 0;
+   margin-bottom: 50px;
+   &_footer {
+      margin-bottom: 30px;
+   }
+}
+
+@import "btn-red";
+
+// ----advantages-----
+.advantages {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   margin-bottom: 135px;
+}
+.subtitle {
+   @include text (500, 30px, 40px);
+   color: $title-color;
+   margin: 0;
+   max-width: 400px;
+   margin-bottom: 20px;
+}
+.list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   color: $text-color;
+}
+.list-item {
+   margin-bottom: 15px;
+   padding-left: 40px;
+   position: relative;
+}
+.list-item::before {
+   content: "";
+   width: 22px;
+   height: 22px;
+   background: url(../design/icon-green.svg) center no-repeat;
+   position: absolute;
+   left: 0;
+   bottom: 4px;
+}
+
+// -----rate-----
+.rate {
+   margin-bottom: 150px;
+   &__info {
+      text-align: center;
+      @extend %flex-center;
+      flex-direction: column;
+   }
+}
+.price {
+   &__info {
+      border: 2px solid #DDDDDD;
+      border-radius: 10px;
+      @extend %flex-center;
+      flex-direction: column;
+      padding: 20px 0 50px 0;
+      margin-top: 20px;
+      &:hover {
+         transition: all .3s;
+         border: 2px solid #F53838;
+      }
+   }
+   &__title {
+      @include text (500, 18px, 30px);
+   }
+   &__text {
+      @include text (700, 25px, 30px);
+      span {
+         font-weight: normal;
+      }
+   }
+}
+.item_price {
+   margin-bottom: 15px;
+   padding-left: 40px;
+   position: relative;
+   &::before {
+      content: "";
+      background: url(../design/icon-price.svg) center no-repeat;
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+      width: 22px;
+      height: 22px;
+   }
+}
+.wrap_btn {
+   margin-top: auto;
+   text-align: center;
+}
+@import "btn-white";
+
+// -----map-----
+.map-social {
+   @extend %flex-center;
+   flex-direction: column;
+   text-align: center;
+   margin-bottom: 124px;
+}
+.map {
+   background: url(../design/map.png) center no-repeat;
+   background-size: 100%;
+   width: 300px;
+   height: 200px;
+   display: inline-block;
+   margin-top: 30px;
+   margin-bottom: 109px;
+}
+.social {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+// ----subscribe
+.subscribe {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-bottom: -130px;
+   background: #FFFFFF;
+   border-radius: 10px;
+   position: relative;
+   padding: 45px;
+   box-shadow: 0 0 30px rgba(71, 70, 70, 0.1);
+}
+.button-red_mar-lef {
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
+// ----footer-----
+.footer {
+   background: #F8F8F8;
+   padding-top: 250px;
+   padding-bottom: 50px;
+   &__social {
+      margin-bottom: 30px;
+   }
+   &__soc-link {
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: inline-block;
+      margin-right: 20px;
+      box-shadow: 0 8px 14px rgba(71, 70, 70, 0.2);
+   }
+}
+.facebook {
+    background: #F53838 url(../design/icon-fb.svg) 10% no-repeat;
+}
+.twitter {
+    background: #F53838 url(../design/ivon-twitter.svg) 34% no-repeat;
+}
+.insta {
+   background: #F53838 url(../design/icon-insta.svg) 10% no-repeat;
+   margin-right: 0;
+}
+.footer__row {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+.col {
+   flex-basis: 20%;
+   &:first-child {
+      margin-right: 30px;
+   }
+}
+.logo {
+   background: url(../design/logo.svg) center no-repeat;
+   width: 149px;
+   height: 37px;
+   display: inline-block;
+}
+.footer__social {
+   display: flex;
+}
+
+.flex-col {
+   display: flex;
+   flex-direction: column;
+}
+.minititle {
+   @include text (500, 18px, 30px);
+   margin: 0;
+   margin-bottom: 20px;
+}
+.col_text {
+   @include text (400, 16px, 30px);
+   text-decoration: none;
+   color: $text-color;
+   margin: 0;
+   margin-bottom: 10px;
+}
+
+@import "media";

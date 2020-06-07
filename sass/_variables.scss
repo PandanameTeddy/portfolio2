@@ -1,0 +1,29 @@
+
+// Миксины
+@mixin text ($font-weight, $font-size, $line-height) {
+   font-weight: $font-weight;
+   font-size: $font-size;
+   line-height: $line-height;
+}
+@mixin circle ($size) {
+   width: $size;
+   height: $size;
+   border-radius: 50%;
+}
+
+// шаблоны
+%start {
+   box-sizing: border-box;
+   font-family: "Rubik", Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 16px;
+   line-height: 30px;
+}
+%flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+// переменные 
+$title-color: #0B132A;
+$text-color: #4F5665;

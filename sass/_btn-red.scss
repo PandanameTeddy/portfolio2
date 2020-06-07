@@ -1,0 +1,14 @@
+.button-red {
+   @include text (700, 15px, 25px);
+   color: #FFFFFF;
+   background: #F53838;
+   border-radius: 10px;
+   padding: 17px 78px;
+   text-decoration: none;
+   box-shadow: 0 30px 50px rgba(245, 56, 56, 0.35);
+}
+.button-red:hover {
+   color: #F53838;
+   background: #FFFFFF;
+   border: 1px solid #F53838;
+}

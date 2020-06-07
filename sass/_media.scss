@@ -1,0 +1,145 @@
+
+@media screen and (min-width: 600px) {
+   .promo {
+      margin-top: 129px;
+      background: url(../design/promo-img1.png) right center no-repeat;
+      background-size: 55%;
+      padding: 70px 0;
+   }
+   .title {
+      @include text (500, 32px, 44px);
+      max-width: 350px;
+   }
+   .text {
+      &_width {
+         max-width: 350px;
+      }
+      &_small {
+         max-width: 400px;
+         margin-bottom: 20px;
+      }
+   }
+
+   // ----advantages----
+   .advantages {
+      background: url(../design/promo-img2.png) left center no-repeat;
+      background-size: 45%;
+   }
+   .subtitle {
+      @include text (500, 30px, 40px);
+   }
+
+   // -----price-----
+   .price {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+   }
+   .item_price {
+      padding-left: 30px;
+   }
+
+   // -----map------
+   .map {
+      width: 681px;
+      height: 366px;
+      margin-top: 50px;
+   }
+   .social {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &-link {
+         margin-right: 30px;
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+
+   // ----subscribe-----
+   .button-red_mar-lef {
+      padding-left: 65px;
+      padding-right: 65px;
+   }
+
+   //----footer-----
+   .col:first-child {
+      margin-right: 70px;
+   }
+   
+}
+
+@media screen and (min-width: 900px) {
+   .promo {
+      background-size: 50%;
+      padding: 70px 0;
+   }
+   .title {
+      @include text (500, 50px, 70px);
+      max-width: 555px;
+   }
+   .text {
+      &_width {
+         max-width: 520px;
+      }
+   }
+   // ----advantages----
+   .subtitle {
+      @include text (500, 35px, 50px);
+   }
+
+   // ---price-----
+   .price {
+      &__info {
+         padding: 79px 0 50px 0;
+      }
+   }
+   .item_price {
+      padding-left: 40px;
+   }
+
+   // ----map----
+   .map {
+      width: 900px;
+      height: 537px;
+      display: inline-block;
+      margin-top: 100px;
+   }
+
+   // ---subscribe----
+   .button-red_mar-lef {
+      margin-left: 200px;
+   }
+
+   //----footer-----
+   .col:first-child {
+      margin-right: 170px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .text_width {
+      max-width: 555px;
+      &_small {
+         max-width: 427px;
+      }
+   }
+
+   // ----map----
+   .map {
+      width: 1060px;
+      height: 537px;
+      display: inline-block;
+   }
+
+   // ---subscribe----
+   .button-red_mar-lef {
+      margin-left: 370px;
+   }
+
+   //----footer-----
+   .col:first-child {
+      margin-right: 230px;
+   }
+}
